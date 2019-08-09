@@ -1,0 +1,50 @@
+@import './asset/flex.scss';
+@import './asset/color.scss';
+@import './asset/length.scss';
+@import './asset/font.scss';
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index2 {
+  z-index: 2;
+}
+
+.top0 {
+  top: 0;
+}
+.top98 {
+  top: 98px;
+}
+
+.margin_auto {
+  margin: auto;
+}
+.margin_10 {
+  margin: 10px;
+}
+.margin_box {
+  margin: 8px 0 12px;
+}
+
+.padding1 {
+  padding: 10px 20px;
+}
+.padding2 {
+  padding: 10px 0;
+}
+.padding3 {
+  padding: 0 10px;
+}
+.padding_10 {
+  padding: 10px;
+}
+
+.borderW {
+  border: 1px solid #FFF;
+}
+
+.text_center {
+  text-align: center;
+}

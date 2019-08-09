@@ -1,0 +1,56 @@
+import Taro from '@tarojs/taro';
+import { View, Text } from "@tarojs/components";
+import clnx from "classnames";
+import '../index.scss';
+import { TStyle } from 'types/common';
+
+function Flex(): JSX.Element {
+  return <View>
+    <View className={clnx(['margin_box'])}>
+      <View className={clnx(['padding1', 'yellow-bg2'])}>
+        <Text className={clnx(['font-size_75'])}>
+          默认: 0 1 auto (后两个属性可选) 该属性有两个快捷值: auto (1 1 auto) 和 none (0 0 auto) 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
+        </Text>
+      </View>
+      <View className={clnx(['flex', 'blue-bg3', 'padding_10', 'max-height15', 'flex-row'])}>
+        <View className={clnx(['flex', 'height2', 'width4', 'borderW', 'blue-bg2', 'margin_10', 'align-center'])} style={styles.flex}>
+          <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>auto</Text>
+        </View>
+        <View className={clnx(['flex', 'height2', 'width4', 'borderW', 'blue-bg2', 'margin_10', 'align-center'])} style={styles.flex_1}>
+          <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>1 1 auto</Text>
+        </View>
+      </View>
+    </View>
+    <View className={clnx(['margin_box'])}>
+      <View className={clnx(['flex', 'blue-bg3', 'padding_10', 'max-height15', 'flex-row'])}>
+        <View className={clnx(['flex', 'height2', 'width4', 'borderW', 'blue-bg2', 'margin_10', 'align-center'])} style={styles.flex_none}>
+          <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>none</Text>
+        </View>
+        <View className={clnx(['flex', 'height2', 'width4', 'borderW', 'blue-bg2', 'margin_10', 'align-center'])} style={styles.flex_0}>
+          <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>0 0 auto</Text>
+        </View>
+      </View>
+    </View>
+  </View>
+}
+
+Flex.options = {
+  addGlobalClass: true,
+}
+
+const styles: TStyle = {
+  flex: {
+    // flex: 'auto',
+  },
+  flex_none: {
+    // flex: 'none',
+  },
+  flex_1: {
+    // flex: '1 1 auto',
+  },
+  flex_0: {
+    // flex: '0 0 auto',
+  },
+}
+
+export default Flex;

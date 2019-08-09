@@ -1,0 +1,44 @@
+$font-base: 40px;
+
+// .width_auto {
+//   width: auto !important;
+// }
+.width1 {
+  width: $font-base;
+}
+.width1_5 {
+  width: $font-base * 1.5;
+}
+.width2 {
+  width: $font-base * 2;
+}
+.width3 {
+  width: $font-base * 3;
+}
+.width4 {
+  width: $font-base * 4;
+}
+.width5 {
+  width: $font-base * 5;
+}
+// .height_auto {
+//   height: auto !important;
+// }
+.height1 {
+  height:  $font-base;
+}
+.height2 {
+  height:  $font-base * 2;
+}
+.height3 {
+  height:  $font-base * 3;
+}
+.height4 {
+  height:  $font-base * 4;
+}
+.height5 {
+  height:  $font-base * 5;
+}
+.height7 {
+  height:  $font-base * 7;
+}

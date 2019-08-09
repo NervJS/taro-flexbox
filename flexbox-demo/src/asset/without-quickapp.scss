@@ -1,0 +1,27 @@
+.box-shadow1 {
+  box-shadow: 0 2px 4px #AAA;
+}
+
+$font-base: 40px;
+
+.min-height6 {
+  min-height:  $font-base * 6;
+}
+.min-height10 {
+  min-height:  $font-base * 10;
+}
+.max-height15 {
+  max-height:  $font-base * 15;
+}
+
+.max-width_root {
+  max-width: 1000px;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.hidden {
+  overflow: hidden;
+}
