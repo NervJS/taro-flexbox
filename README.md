@@ -47,8 +47,8 @@ yarn build
 - [x] 微信小程序 weapp
 - [x] 智能小程序 swan
 - [x] 阿里小程序 alipay
-- [x] 头条小程序 tt 组件样式隔离适配
+- [x] 头条小程序 tt
 - [x] h5
 - [x] rn
-- [x] QQ轻应用 qq 组件样式隔离适配
+- [x] QQ轻应用 qq
 - [ ] 快应用 quickapp
