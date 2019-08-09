@@ -4,7 +4,7 @@
 
 2009年，**W3C** 提出了一种新的方案----Flex 布局，可以简便、完整、响应式地实现各种页面布局，且在除了 IE 之外的浏览器上都表现良好。
 
-[![CanIUseFlexBox](./src/asset/CanIUse.png)](https://caniuse.com/#feat=flexbox)
+[![CanIUseFlexBox](./asset/CanIUse.png)](https://caniuse.com/#feat=flexbox)
 
 > Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
 > 
