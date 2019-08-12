@@ -1,0 +1,20 @@
+{
+  "name": "taro-flexbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "基于 taro 的 FlexBox 跨端测试",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass"
+  },
+  "scripts": {
+    "predeploy": "git subtree split --prefix build -b gh-pages",
+    "deploy": "git push -f origin gh-pages:gh-pages",
+    "postdeploy": "git branch -D gh-pages",
+    "predeployed": "cd flexbox-demo && yarn deployed",
+    "deployed": "git push origin `git subtree split --prefix ./flexbox-demo/build gh-pages`:gh-pages --force"
+  },
+  "author": "",
+  "license": "MIT"
+}

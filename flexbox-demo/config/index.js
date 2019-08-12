@@ -1,3 +1,9 @@
+function outputRoot () {
+  if (process.env.OUTPUT_BUILD === process.env.TARO_ENV)
+    return 'build';
+  return `dist/${process.env.TARO_ENV}`;
+}
+
 const config = {
   projectName: 'taro-flexbox',
   date: '2019-7-25',
@@ -8,7 +14,7 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: `dist/${process.env.TARO_ENV}`,
+  outputRoot: outputRoot(),
   plugins: {
     babel: {
       sourceMap: true,

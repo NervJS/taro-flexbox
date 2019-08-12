@@ -167,3 +167,5 @@ temp
 website/build
 website/package.json
 packages/**/package-lock.json
+
+!/flexbox-demo/build/

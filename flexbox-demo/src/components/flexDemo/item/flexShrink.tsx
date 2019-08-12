@@ -86,7 +86,7 @@ FlexShrink.options = {
 
 const styles: TStyle = {
   root: {
-    width: windowWidth,
+    width: process.env.TARO_ENV === 'h5' ? '100%' : windowWidth,
   },
   flexShrink: {
     flexShrink: 0,

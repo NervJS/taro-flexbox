@@ -1,8 +1,19 @@
 # TARO FlexBox 测试项目
 
+> [注意事项](./flexbox-demo/README.md)
+
+[web]: asset/Web.jpg
+[weapp]: asset/WeChat.jpg
+[swan]: asset/Baidu.png
+[alipay]: asset/Alipay.jpg
+[tt]: asset/ByteDance.jpg
+[qq]: asset/QQ.jpg
+[ios]: asset/iOS.png
+[android]: asset/Android.png
+
 ## 关于 Flex 布局
 
-2009年，**W3C** 提出了一种新的方案----Flex 布局，可以简便、完整、响应式地实现各种页面布局，且在除了 IE 之外的浏览器上都表现良好。
+2009年，**W3C** 提出了一种新的方案--Flex 布局，可以简便、完整、响应式地实现各种页面布局，且在除了 IE 之外的浏览器上都表现良好。
 
 [![CanIUseFlexBox](./asset/CanIUse.png)](https://caniuse.com/#feat=flexbox)
 
@@ -52,3 +63,9 @@ yarn build
 - [x] rn
 - [x] QQ轻应用 qq
 - [ ] 快应用 quickapp
+
+## 预览效果
+
+| Web | weapp | swan | alipay | tt | qq | iOS | Android |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|![web]|![weapp]|![swan]|![alipay]|![tt]|![qq]|![ios]|![android]|
