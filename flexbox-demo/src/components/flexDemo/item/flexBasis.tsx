@@ -47,7 +47,7 @@ FlexBasis.options = {
 
 const styles: TStyle = {
   root: {
-    width: windowWidth,
+    width: process.env.TARO_ENV === 'h5' ? '100%' : windowWidth,
   },
   flexBasis: {
     flexBasis: 'auto',
