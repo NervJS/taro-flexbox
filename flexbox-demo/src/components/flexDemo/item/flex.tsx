@@ -9,7 +9,7 @@ function Flex(): JSX.Element {
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg2'])}>
         <Text className={clnx(['font-size_75'])}>
-          默认: 0 1 auto (后两个属性可选) 该属性有两个快捷值: auto (1 1 auto) 和 none (0 0 auto) 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
+          默认: 0 1 auto (后两个属性可选) 该属性有两个快捷值: auto (1 1 auto) 和 none (0 0 auto) 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。(RN 只支持数字)
         </Text>
       </View>
       <View className={clnx(['flex', 'blue-bg3', 'padding_10', 'max-height15', 'flex-row'])}>
@@ -40,16 +40,16 @@ Flex.options = {
 
 const styles: TStyle = {
   flex: {
-    // flex: 'auto',
+    flex: 'auto',
   },
   flex_none: {
-    // flex: 'none',
+    flex: 'none',
   },
   flex_1: {
-    // flex: '1 1 auto',
+    flex: '1 1 auto',
   },
   flex_0: {
-    // flex: '0 0 auto',
+    flex: '0 0 auto',
   },
 }
 

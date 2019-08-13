@@ -11,6 +11,7 @@ import FlexGrowDemo from './item/flexGrow';
 import FlexShrinkDemo from './item/flexShrink';
 import FlexBasisDemo from './item/flexBasis';
 import FlexDemo from './item/flex';
+import FlexRNDemo from './item/flex-rn';
 import AlignSelfDemo from './item/alignSelf';
 import './index.scss';
 
@@ -58,7 +59,7 @@ function PickContent({name}: ContentProps): JSX.Element {
       break;
     }
     case 'Flex': {
-      Content = <FlexDemo />;
+      Content = process.env.TARO_ENV === 'rn' ? <FlexRNDemo /> : <FlexDemo />;
       break;
     }
     case 'AlignSelf': {

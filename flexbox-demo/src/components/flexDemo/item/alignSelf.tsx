@@ -3,6 +3,7 @@ import { View, Text } from "@tarojs/components";
 import NotSupport from '../NotSupport';
 import clnx from "classnames";
 import '../index.scss';
+import { TStyle } from 'types/common';
 
 function AlignSelf(): JSX.Element {
   return <View>
@@ -50,13 +51,13 @@ function AlignSelf(): JSX.Element {
             <NotSupport />
         </View> :
         <View className={clnx(['flex', 'blue-bg3', 'padding_10', 'max-height15', 'flex-row'])}>
-          <View className={clnx(['flex', 'self-baseline', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height7'])}>
+          <View className={clnx(['flex', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height7'])} style={styles.baseline} >
             <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>1</Text>
           </View>
-          <View className={clnx(['flex', 'self-baseline', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height5'])}>
+          <View className={clnx(['flex', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height5'])} style={styles.baseline} >
             <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>2</Text>
           </View>
-          <View className={clnx(['flex', 'self-baseline', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height3'])}>
+          <View className={clnx(['flex', 'height2', 'width2', 'borderW', 'blue-bg2', 'margin_10', 'align-center', 'padding3', 'flex-shrink_0', 'height3'])} style={styles.baseline} >
             <Text className={clnx(['white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center'])}>3</Text>
           </View>
         </View>
@@ -67,6 +68,12 @@ function AlignSelf(): JSX.Element {
 
 AlignSelf.options = {
   addGlobalClass: true,
+}
+
+const styles: TStyle = {
+  baseline: {
+    alignSelf: 'baseline',
+  },
 }
 
 export default AlignSelf;
