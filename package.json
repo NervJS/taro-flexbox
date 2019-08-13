@@ -9,8 +9,10 @@
     "css": "sass"
   },
   "scripts": {
-    "predeployed": "cd flexbox-demo && yarn deployed",
-    "deployed": "git subtree push --prefix flexbox-demo/build origin gh-pages"
+    "deploy": "cd flexbox-demo && yarn deployed",
+    "predeployed": "git subtree split --prefix flexbox-demo/build -b gh-pages",
+    "deployed": "git push -f origin gh-pages:gh-pages",
+    "postdeployed": "git branch -D gh-pages"
   },
   "author": "",
   "license": "MIT"
