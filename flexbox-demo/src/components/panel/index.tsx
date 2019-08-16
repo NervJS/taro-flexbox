@@ -7,7 +7,7 @@ import './index.scss';
 function Panel(props: PanelProps) {
   const classes = props.classes || {};
   return <View className={clnx(classes.root)} style={props.style}>
-      <View className={clnx(classes.title ? classes.title : ['top0', 'padding1', 'gray-bgD', 'box-shadow1'])} style={
+      <View className={clnx(classes.title ? classes.title : ['top0', 'padding1', 'black-bg2', 'box-shadow1'])} style={
         process.env.TARO_ENV !== 'rn' ? {
           position: 'sticky',
         } : {}

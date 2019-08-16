@@ -7,22 +7,22 @@ import '../index.scss';
 
 function AlignContent (props: AlignContentProps): JSX.Element {
   const list = [
-    { class: ['pink-bg', 'width4'] },
-    { class: ['green-bg', 'width3'] },
-    { class: ['yellow-bg', 'width5'] },
-    { class: ['green-bg', 'width3'] },
-    { class: ['yellow-bg', 'width5'] },
-    { class: ['green-bg', 'width3'] },
-    { class: ['pink-bg', 'width4'] }];
-  return <View className={clnx(['flex', 'flex-wrap', 'blue-bg3', 'padding_10', 'min-height10'],
+    { class: ['brand_blue-bg3', 'width4'] },
+    { class: ['brand_blue-bg2', 'width3'] },
+    { class: ['brand_blue-bg1', 'width5'] },
+    { class: ['brand_blue-bg2', 'width3'] },
+    { class: ['brand_blue-bg1', 'width5'] },
+    { class: ['brand_blue-bg2', 'width3'] },
+    { class: ['brand_blue-bg3', 'width4'] }];
+  return <View className={clnx(['flex', 'flex-wrap', 'brand_blue-bg_5', 'padding_10', 'min-height10'],
       process.env.TARO_ENV === 'rn' ? 'flex-column' : 'flex-row')}
     style={{
       alignContent: props.alignContent,
   }}>
     {list.map((e, i) => <View key={`${i}`} className={clnx([
-      'flex', 'height2', 'borderW', 'margin_10', 'align-center'], e.class)}>
+      'flex', 'height2', 'margin_10', 'align-center'], e.class)}>
       <Text className={clnx([
-        'white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center', 'height1', 'width1'])}>{i * 1 + 1}</Text>
+        'cream', 'font-size_75', 'line-height1', 'margin_auto', 'text_center', 'height1', 'width1'])}>{i * 1 + 1}</Text>
     </View>)}
   </View>
 }

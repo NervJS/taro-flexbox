@@ -13,7 +13,7 @@ export default class Index extends Component {
    *
    * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
-   * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
+   * 提示和声明 navigationBarTextStyle: 'black' | 'cream' 类型冲突, 需要显示声明类型
    */
   config: Config = {
     navigationBarTitleText: 'FlexBox 布局'
@@ -95,26 +95,26 @@ export default class Index extends Component {
     return (
       <View className={clnx(['max-width_root', 'margin_auto'], process.env.TARO_ENV === 'h5' ? ['line-height1'] : [])}>
         {process.env.TARO_ENV === 'h5' ? <View className={clnx([
-          'flex', 'box-shadow1', 'white-bg', 'bolder', 'head', 'align-center', 'flex-column'])} style={styles.sticky}>
+          'flex', 'box-shadow1', 'black-bg', 'white', 'bolder', 'head', 'align-center', 'flex-column'])} style={styles.sticky}>
           <Text>FlexBox 布局</Text>
         </View> : undefined}
-        <View className={clnx(['padding_10', 'gray-bgEF', 'flex-column'])}>
-          <View>
+        <View className={clnx(['padding_10', 'brand_blue-bg_5', 'flex-column'])}>
+          <View className={clnx(['padding_10'])}>
             <Text className={clnx(['font-size_75'])} decode >&emsp;&emsp;采用<Text className={clnx(['span', 'bolder'])}>Flex 布局</Text>的元素，称为<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>(flex container)。<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>的所有子元素自动成为容器成员，称为<Text className={clnx(['span', 'bolder'])}>Flex 项目</Text>(flex item)。</Text>
           </View>
-          <View>
+          <View className={clnx(['padding_10'])}>
             <Text className={clnx(['font-size_75'])}>
               <Text className={clnx(['span', 'bolder'])} decode>&emsp;&emsp;Flex 容器</Text>默认存在两根轴: 水平的主轴(main axis)和垂直的交叉轴(cross axis)。
             </Text>
           </View>
-          <View>
+          <View className={clnx(['padding_10'])}>
             <Text className={clnx(['font-size_75'])}>
               <Text className={clnx(['span', 'bolder'])} decode>&emsp;&emsp;Flex 项目</Text>默认沿主轴排列。主轴的开始位置(与边框的交叉点)叫做main start，结束位置叫做main end;交叉轴的开始位置叫做cross start，结束位置叫做cross end;单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
             </Text>
           </View>
-          <View>
+          <View className={clnx(['padding_10'])}>
             <Text className={clnx(['font-size_75'])}>
-              <Text className={clnx(['alert'])} decode>&emsp;&emsp;注意，设为 Flex 布局以后，子元素的 *float* 、 *clear* 和 *vertical-align* 属性将失效。</Text>
+              <Text className={clnx(['bolder'])} decode>&emsp;&emsp;注意，设为 Flex 布局以后，子元素的 *float* 、 *clear* 和 *vertical-align* 属性将失效。</Text>
             </Text>
           </View>
         </View>

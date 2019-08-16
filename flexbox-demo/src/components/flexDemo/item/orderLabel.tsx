@@ -7,10 +7,10 @@ import '../index.scss';
 function OrderLabel({index, order}: OrderLabelProps) {
   return <View>
     <View>
-      <Text className={clnx(['white', 'font-size_75', 'line-height1', 'text_center'])}>index: {index}</Text>
+      <Text className={clnx(['cream', 'font-size_75', 'line-height1', 'text_center'])}>index: {index}</Text>
     </View>
     <View>
-      <Text className={clnx(['white', 'font-size_75', 'line-height1', 'text_center'])}>order: {order}</Text>
+      <Text className={clnx(['cream', 'font-size_75', 'line-height1', 'text_center'])}>order: {order}</Text>
     </View>
   </View>
 };

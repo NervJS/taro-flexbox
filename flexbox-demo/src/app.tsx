@@ -25,7 +25,7 @@ class App extends Component {
    *
    * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
-   * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
+   * 提示和声明 navigationBarTextStyle: 'black' | 'cream' 类型冲突, 需要显示声明类型
    */
   config: Config = {
     pages: [
@@ -33,7 +33,7 @@ class App extends Component {
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#C5D9E8',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     }

@@ -7,16 +7,16 @@ import '../index.scss';
 
 function AlignItems (props: AlignItemsProps): JSX.Element {
   const list = [
-    { label: 1, class: ['pink-bg', 'height4'] },
-    { label: 2, class: ['green-bg', 'height3'] },
-    { label: 3, class: ['yellow-bg', 'height5'] }];
-  return <View className={clnx(['flex', 'blue-bg3', 'padding_10', 'min-height6', 'flex-row'])} style={{
+    { label: 1, class: ['brand_blue-bg3', 'height4'] },
+    { label: 2, class: ['brand_blue-bg2', 'height3'] },
+    { label: 3, class: ['brand_blue-bg1', 'height5'] }];
+  return <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'min-height6', 'flex-row'])} style={{
     alignItems: props.alignItems,
   }}>
     {list.map((e, i) => <View key={`${i}`} className={clnx([
-      'flex', 'width2', 'borderW', 'margin_10', 'align-center'] , props.alignItems === 'stretch' ? e.class[0] : e.class)} >
+      'flex', 'width2', 'margin_10', 'align-center'] , props.alignItems === 'stretch' ? e.class[0] : e.class)} >
       <Text className={clnx([
-        'white', 'font-size_75', 'line-height1', 'margin_auto', 'text_center', 'height1', 'width1'])}>{e.label}</Text>
+        'cream', 'font-size_75', 'line-height1', 'margin_auto', 'text_center', 'height1', 'width1'])}>{e.label}</Text>
     </View>)}
   </View>
 }
