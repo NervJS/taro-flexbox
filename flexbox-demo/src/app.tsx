@@ -1,15 +1,10 @@
 import Taro, { Component, Config } from '@tarojs/taro';
-import {YellowBox} from 'react-native';
 import Index from './pages/index';
 
 import './app.scss';
 
 if (process.env.TARO_ENV !== 'quickapp') {
   require('./asset/without-quickapp.scss');
-}
-
-if (process.env.TARO_ENV === 'rn') {
-  YellowBox.ignoreWarnings(['Require cycle:']);
 }
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -33,9 +28,9 @@ class App extends Component {
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#C5D9E8',
+      navigationBarBackgroundColor: '#000',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'white'
     }
   }
 

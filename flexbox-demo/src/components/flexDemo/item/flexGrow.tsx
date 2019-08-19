@@ -7,8 +7,8 @@ import { TStyle } from 'types/common';
 function FlexGrow(): JSX.Element {
   return <View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           默认: 0 如果存在剩余空间，不放大
         </Text>
       </View>
@@ -25,8 +25,8 @@ function FlexGrow(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           如果所有项目的flex-grow属性都为1，则它们将等分剩余空间(如果有的话)
         </Text>
       </View>
@@ -43,8 +43,8 @@ function FlexGrow(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍
         </Text>
       </View>

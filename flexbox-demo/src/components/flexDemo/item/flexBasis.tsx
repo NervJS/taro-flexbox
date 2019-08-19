@@ -8,8 +8,8 @@ import { TStyle } from 'types/common';
 function FlexBasis(): JSX.Element {
   return <View style={styles.root}>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           默认: auto 项目的本来大小 它可以设为跟width或height属性一样的值(比如350px)，则项目将占据固定空间。
         </Text>
       </View>

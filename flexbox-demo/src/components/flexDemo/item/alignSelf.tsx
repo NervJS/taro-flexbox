@@ -8,8 +8,8 @@ import { TStyle } from 'types/common';
 function AlignSelf(): JSX.Element {
   return <View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           默认: auto 继承父元素的align-items属性，如果没有父元素，则等同于stretch
         </Text>
       </View>
@@ -20,8 +20,8 @@ function AlignSelf(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           该属性可能取6个值，除了auto，其他都与align-items属性完全一致。
         </Text>
       </View>
@@ -41,8 +41,8 @@ function AlignSelf(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           baseline
         </Text>
       </View>

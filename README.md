@@ -2,11 +2,11 @@
 
 > [注意事项](./flexbox-demo/README.md)
 
-[web]: asset/Web.jpg
+[web]: asset/Web.png
 [weapp]: asset/WeChat.png
 [swan]: asset/Baidu.png
 [alipay]: asset/Alipay.png
-[tt]: asset/ByteDance.jpg
+[tt]: asset/ByteDance.png
 [qq]: asset/QQ.png
 [ios]: asset/iOS.png
 [android]: asset/Android.png
@@ -66,6 +66,10 @@ yarn build
 
 ## 预览效果
 
-| Web | weapp | swan | alipay | tt | qq | iOS | Android |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|![web]|![weapp]|![swan]|![alipay]|![tt]|![qq]|![ios]|![android]|
+| Web | weapp | swan | alipay |
+|:--:|:--:|:--:|:--:|
+|![web]|![weapp]|![swan]|![alipay]|
+
+| tt | qq | iOS | Android |
+|:--:|:--:|:--:|:--:|
+|![tt]|![qq]|![ios]|![android]|

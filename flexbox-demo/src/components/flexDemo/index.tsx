@@ -8,7 +8,7 @@ import './index.scss';
 
 function RenderPanel({title, list = []}: PanelProps): JSX.Element {
   return <Panel 
-    classes={{ title: clnx(['z-index2', 'top0', 'height2', 'black-bg8', 'padding1']), content: clnx('padding2') }}
+    classes={{ title: clnx(['z-index2', 'top0', 'black-bg8', 'padding1'], process.env.TARO_ENV === 'rn' ? 'height2_5' : 'height2'), content: clnx('padding2') }}
     renderTitle={<Text className={clnx(['font-size1_25', 'line-height2', 'white', 'bolder'])}>{title}</Text>}>
     {list.map(e => {
       return <Panel

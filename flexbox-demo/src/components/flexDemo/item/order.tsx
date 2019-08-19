@@ -14,8 +14,8 @@ function Order(): JSX.Element {
   }
   return <View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>默认: 0 数值越小，排列越靠前</Text>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>默认: 0 数值越小，排列越靠前</Text>
       </View>
       <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'max-height15', 'flex-row'])}>
         <View className={clnx(['flex', 'width4', 'brand_blue-bg', 'margin_10', 'align-center'])} style={styles.order}>

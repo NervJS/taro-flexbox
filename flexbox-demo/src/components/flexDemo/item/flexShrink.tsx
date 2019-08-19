@@ -8,8 +8,8 @@ import { TStyle } from 'types/common';
 function FlexShrink(): JSX.Element {
   return <View style={styles.root}>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           默认: 0 如果空间不足，该项目将缩小 负值对该属性无效
         </Text>
       </View>
@@ -51,8 +51,8 @@ function FlexShrink(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小
         </Text>
       </View>
@@ -63,8 +63,8 @@ function FlexShrink(): JSX.Element {
       </View>
     </View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小
         </Text>
       </View>

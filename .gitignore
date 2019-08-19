@@ -4,6 +4,8 @@ dist
 .temp
 rn_temp
 
+Question.md
+
 # Built application files
 *.apk
 *.ap_

@@ -7,8 +7,8 @@ import { TStyle } from 'types/common';
 function Flex(): JSX.Element {
   return <View>
     <View className={clnx(['margin_box'])}>
-      <View className={clnx(['padding1', 'yellow-bg1', 'black2'])}>
-        <Text className={clnx(['font-size_75'])}>
+      <View className={clnx(['padding1', 'yellow-bg1'])}>
+        <Text className={clnx(['font-size_75', 'black2'])}>
           默认: 0 1 auto (后两个属性可选) 该属性有两个快捷值: auto (1 1 auto) 和 none (0 0 auto) 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。(RN 只支持数字)
         </Text>
       </View>
