@@ -6,7 +6,7 @@ import './index.scss';
 
 function NotSupport(): JSX.Element {
   return <View className={clnx(['padding1', 'brand_blue-bg_5'])}>
-  <Text className={clnx(['font-size_75', 'cream', 'text_center'])}>当前环境不支持</Text>
+  <Text className={clnx(['font-size_75', 'black2', 'text_center'])}>当前环境不支持</Text>
 </View>
 }
 

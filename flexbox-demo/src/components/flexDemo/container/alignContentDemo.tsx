@@ -6,11 +6,6 @@ import clnx from "classnames";
 import '../index.scss';
 
 function AlignContentDemo (): JSX.Element {
-  // if (process.env.TARO_ENV === 'rn') {
-  //   return <View className={clnx(['margin_box'])}>
-  //     <NotSupport />
-  //   </View>;
-  // }
   return <View>
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg1'])}>

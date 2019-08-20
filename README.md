@@ -1,6 +1,6 @@
 # TARO FlexBox 测试项目
 
-> [注意事项](./flexbox-demo/README.md)
+> [Taro 跨端样式方案](https://github.com/NervJS/taro-flexbox/wiki)
 
 [web]: asset/Web.png
 [weapp]: asset/WeChat.png

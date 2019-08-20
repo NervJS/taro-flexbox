@@ -14,8 +14,7 @@ function AlignContent (props: AlignContentProps): JSX.Element {
     { class: ['brand_blue-bg1', 'width5'] },
     { class: ['brand_blue-bg2', 'width3'] },
     { class: ['brand_blue-bg3', 'width4'] }];
-  return <View className={clnx(['flex', 'flex-wrap', 'brand_blue-bg_5', 'padding_10', 'min-height10'],
-      process.env.TARO_ENV === 'rn' ? 'flex-column' : 'flex-row')}
+  return <View className={clnx(['flex', 'flex-wrap', 'brand_blue-bg_5', 'padding_10', 'min-height10'])}
     style={{
       alignContent: props.alignContent,
   }}>
