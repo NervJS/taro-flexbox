@@ -27,55 +27,72 @@ export default class Index extends Component {
   state = {
     containerList: [
       {
+        key: 'flex-direction',
         title: 'flex-direction',
         subtitle: '决定主轴的方向(即 item 的排列方向)',
         contentName: 'FlexDirection',
       }, {
+        key: 'flex-wrap',
         title: 'flex-wrap',
         subtitle: '定义，如果一条轴线排不下，如何换行',
         contentName: 'FlexWrap',
       }, {
+        key: 'flex-flow',
         title: 'flex-flow (RN/快应用 不支持)',
-        subtitle: '是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap',
+        subtitle: '是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap',
         contentName: 'FlexFlow',
       }, {
-        title: 'justify-content',
-        subtitle: '定义了 item 在主轴上的对齐方式',
-        contentName: 'JustifyContent',
-      }, {
+        key: 'align-items',
         title: 'align-items',
         subtitle: '定义 item 在交叉轴上如何对齐',
         contentName: 'AlignItems',
       }, {
+        key: 'align-content',
         title: 'align-content',
         subtitle: '定义了多根轴线的对齐方式(如果 item 只有一根轴线，该属性不起作用)',
         contentName: 'AlignContent',
-      },
+      }, {
+        key: 'justify-content',
+        title: 'justify-content',
+        subtitle: '定义了 item 在主轴上的对齐方式',
+        contentName: 'JustifyContent',
+      }, {
+        key: 'place-content',
+        title: 'place-content',
+        subtitle: 'justify-content 和 align-content 属性的缩写，第一个值是属于 align-content 的；若只设置了一个值，且对 justify-content 无效，则整个值无效',
+        contentName: 'PlaceContent',
+      }
     ],
     itemList: [
       {
+        key: 'order',
         title: 'order (RN 不支持)',
         subtitle: '定义 item 的排列顺序',
         contentName: 'Order',
       }, {
+        key: 'flex-grow',
         title: 'flex-grow',
         subtitle: '定义 item 的放大比例',
         contentName: 'FlexGrow',
       }, {
+        key: 'flex-shrink',
         title: 'flex-shrink',
         subtitle: '定义了 item 的缩小比例',
         contentName: 'FlexShrink',
       }, {
+        key: 'flex-basis',
         title: 'flex-basis',
         subtitle: '定义了在分配多余空间之前， item 占据的主轴空间(main size)。浏览器根据这个属性，计算主轴是否有多余空间。',
         contentName: 'FlexBasis',
       }, {
+        key: 'flex',
         title: 'flex',
-        subtitle: 'flex-grow, flex-shrink 和 flex-basis的简写',
+        subtitle: 'flex-grow, flex-shrink 和 flex-basis 的简写',
         contentName: 'Flex',
       }, {
+        key: 'align-self',
         title: 'align-self',
-        subtitle: '允许单个 item 有与其他 item 不一样的对齐方式，可覆盖align-items属性',
+        subtitle: '允许单个 item 有与其他 item 不一样的对齐方式，可覆盖 align-items 属性',
         contentName: 'AlignSelf',
       },
     ],
@@ -103,7 +120,7 @@ export default class Index extends Component {
           </View> : undefined}
           <View className={clnx(['padding_10', 'brand_blue-bg_5', 'flex-column'])}>
             <View className={clnx(['padding_10'])}>
-              <Text className={clnx(['font-size_75'])} decode >&emsp;&emsp;采用<Text className={clnx(['span', 'bolder'])}>Flex 布局</Text>的元素，称为<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>(flex container)。<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>的所有子元素自动成为容器成员，称为<Text className={clnx(['span', 'bolder'])}>Flex 项目</Text>(flex item)。</Text>
+              <Text className={clnx(['font-size_75'])} decode >&emsp;&emsp;采用<Text className={clnx(['span', 'bolder'])}>Flex 布局</Text>的元素，称为<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>(flex container)。<Text className={clnx(['span', 'bolder'])}>Flex 容器</Text>的所有子元素自动成为容器成员，称为<Text className={clnx(['span', 'bolder'])}>Flex 元素</Text>(flex item)。</Text>
             </View>
             <View className={clnx(['padding_10'])}>
               <Text className={clnx(['font-size_75'])}>
@@ -112,7 +129,7 @@ export default class Index extends Component {
             </View>
             <View className={clnx(['padding_10'])}>
               <Text className={clnx(['font-size_75'])}>
-                <Text className={clnx(['span', 'bolder'])} decode>&emsp;&emsp;Flex 项目</Text>默认沿主轴排列。主轴的开始位置(与边框的交叉点)叫做main start，结束位置叫做main end;交叉轴的开始位置叫做cross start，结束位置叫做cross end;单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
+                <Text className={clnx(['span', 'bolder'])} decode>&emsp;&emsp;Flex 元素</Text>默认沿主轴排列。主轴的开始位置(与边框的交叉点)叫做main start，结束位置叫做main end;交叉轴的开始位置叫做cross start，结束位置叫做cross end;单个 flex 元素占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
               </Text>
             </View>
             <View className={clnx(['padding_10'])}>
@@ -121,8 +138,8 @@ export default class Index extends Component {
               </Text>
             </View>
           </View>
-          <Panel key='Flex Container' title='Flex Container 属性' list={containerList}/>
-          <Panel key='Flex Item' title='Flex Item 属性' list={itemList}/>
+          <Panel key='Flex-Container' title='Flex Container 属性' list={containerList}/>
+          <Panel key='Flex-Item' title='Flex Item 属性' list={itemList}/>
         </View>
       </View>
     )

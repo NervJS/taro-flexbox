@@ -20,11 +20,11 @@ function JustifyContentDemo(): JSX.Element {
       </View>
       <JustifyContent justifyContent='center' />
       <View className={clnx(['padding1', 'yellow-bg1'])}>
-        <Text className={clnx(['font-size_75', 'black2'])}>space-between 两端对齐，项目之间的间隔都相等</Text>
+        <Text className={clnx(['font-size_75', 'black2'])}>space-between 两端对齐， flex 元素之间的间隔都相等</Text>
       </View>
       <JustifyContent justifyContent='space-between' />
       <View className={clnx(['padding1', 'yellow-bg1'])}>
-        <Text className={clnx(['font-size_75', 'black2'])}>space-around 每个项目两侧的间隔相等(所以，项目之间的间隔比项目与边框的间隔大一倍)</Text>
+        <Text className={clnx(['font-size_75', 'black2'])}>space-around 每个 flex 元素两侧的间隔相等(所以， flex 元素之间的间隔比 flex 元素与边框的间隔大一倍)</Text>
       </View>
       <JustifyContent justifyContent='space-around' />
     </View>

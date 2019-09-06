@@ -97,6 +97,9 @@ const config = {
           }
         }
       }
+    },
+    router: {
+      mode: 'browser' // 'hash' 'browser'
     }
   }
 }

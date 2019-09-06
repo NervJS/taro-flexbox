@@ -1,7 +1,5 @@
 # 注意事项
 
-> align-self 属性的 baseline 值, 在微信、QQ、头条小程序上会失效
-
 ## React Native
 
 - flex-direction 属性

@@ -6,22 +6,38 @@ import PickContent from './Content';
 import clnx from "classnames";
 import './index.scss';
 
-function RenderPanel({title, list = []}: PanelProps): JSX.Element {
+function RenderPanel(props: PanelProps): JSX.Element {
   return <Panel 
     classes={{ title: clnx(['z-index2', 'top0', 'black-bg8', 'padding1'], process.env.TARO_ENV === 'rn' ? 'height2_5' : 'height2'), content: clnx('padding2') }}
-    renderTitle={<Text className={clnx(['font-size1_25', 'line-height2', 'white', 'bolder'])}>{title}</Text>}>
-    {list.map(e => {
+    renderTitle={
+      process.env.TARO_ENV === 'rn' ?
+      <Text className={clnx(['font-size1_25', 'line-height2', 'white', 'bolder'])}>{props.title}</Text> :
+      <h2 id={`#${props.key}`}><a href={`#${props.key}`}><Text className={clnx(['font-size1_25', 'line-height2', 'white', 'bolder'])}>{props.title}</Text></a></h2>
+    }>
+    {props.list.map(e => {
       return <Panel
-        key={e.title}
+        key={e.key}
         classes={{ title: clnx(['z-index1', 'black-bg2', 'padding1'], process.env.TARO_ENV !== 'rn' ? ['top98'] : []), content: clnx('padding2') }}
-        renderTitle={<View>
-          <View>
-            <Text className={clnx(['font-size1', 'cream', 'bolder'])}>{e.title}</Text>
+        renderTitle={
+          process.env.TARO_ENV === 'rn' ? <View>
+            <View>
+              <Text className={clnx(['font-size1', 'cream', 'bolder'])}>{e.title}</Text>
+            </View>
+            <View>
+              <Text className={clnx(['font-size_75', 'wall'])}>{e.subtitle}</Text>
+            </View>
           </View>
-          <View>
-            <Text className={clnx(['font-size_75', 'wall'])}>{e.subtitle}</Text>
-          </View>
-        </View>}
+          : <h5 id={`#${props.key}-${e.key}`}>
+            <a href={`#${props.key}-${e.key}`}>
+              <View>
+                <Text className={clnx(['font-size1', 'cream', 'bolder'])}>{e.title}</Text>
+              </View>
+              <View>
+                <Text className={clnx(['font-size_75', 'wall'])}>{e.subtitle}</Text>
+              </View>
+            </a>
+          </h5>
+        }
       >
         <PickContent name={e.contentName}/>
       </Panel>

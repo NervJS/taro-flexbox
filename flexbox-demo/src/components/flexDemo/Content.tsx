@@ -6,6 +6,7 @@ import FlexFlowDemo from './container/flexFlowDemo';
 import JustifyContentDemo from './container/justifyContentDemo';
 import AlignItemsDemo from './container/alignItemsDemo';
 import AlignContentDemo from './container/alignContentDemo';
+import PlaceContentDemo from "./container/placejustifyContentDemo";
 import OrderDemo from './item/order';
 import FlexGrowDemo from './item/flexGrow';
 import FlexShrinkDemo from './item/flexShrink';
@@ -40,6 +41,10 @@ function PickContent({name}: ContentProps): JSX.Element {
     }
     case 'AlignContent': {
       Content = <AlignContentDemo />;
+      break;
+    }
+    case 'PlaceContent': {
+      Content = <PlaceContentDemo />;
       break;
     }
     case 'Order': {

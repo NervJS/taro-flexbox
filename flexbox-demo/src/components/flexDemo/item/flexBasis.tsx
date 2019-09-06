@@ -10,7 +10,7 @@ function FlexBasis(): JSX.Element {
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg1'])}>
         <Text className={clnx(['font-size_75', 'black2'])}>
-          默认: auto 项目的本来大小 它可以设为跟width或height属性一样的值(比如350px)，则项目将占据固定空间。
+          默认: auto flex 元素的本来大小 它可以设为跟width或height属性一样的值(比如350px)，则 flex 元素将占据固定空间。
         </Text>
       </View>
       <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'max-height15', 'flex-row'])}>

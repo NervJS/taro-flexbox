@@ -6,20 +6,13 @@ import clnx from "classnames";
 import '../index.scss';
 
 function AlignContent (props: AlignContentProps): JSX.Element {
-  const list = [
-    { class: ['brand_blue-bg3', 'width4'] },
-    { class: ['brand_blue-bg2', 'width3'] },
-    { class: ['brand_blue-bg1', 'width5'] },
-    { class: ['brand_blue-bg2', 'width3'] },
-    { class: ['brand_blue-bg1', 'width5'] },
-    { class: ['brand_blue-bg2', 'width3'] },
-    { class: ['brand_blue-bg3', 'width4'] }];
-  return <View className={clnx(['flex', 'flex-wrap', 'brand_blue-bg_5', 'padding_10', 'min-height10'])}
+  const list = new Array(12).fill('');
+  return <View className={clnx(['flex', 'flex-wrap', 'flex-column', 'brand_blue-bg_5', 'padding_10', 'height12'])}
     style={{
       alignContent: props.alignContent,
   }}>
-    {list.map((e, i) => <View key={`${i}`} className={clnx([
-      'flex', 'height2', 'margin_10', 'align-center'], e.class)}>
+    {list.map((_e, i) => <View key={`${i}`} className={clnx([
+      'flex', 'height2', 'width2', 'margin_10', 'brand_blue-bg2', 'align-center'])}>
       <Text className={clnx([
         'cream', 'font-size_75', 'line-height1', 'margin_auto', 'text_center', 'height1', 'width1'])}>{i * 1 + 1}</Text>
     </View>)}

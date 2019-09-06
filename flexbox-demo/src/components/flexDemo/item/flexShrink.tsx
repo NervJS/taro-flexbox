@@ -10,7 +10,7 @@ function FlexShrink(): JSX.Element {
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg1'])}>
         <Text className={clnx(['font-size_75', 'black2'])}>
-          默认: 0 如果空间不足，该项目将缩小 负值对该属性无效
+          默认: 0 如果空间不足，该 flex 元素将缩小 负值对该属性无效
         </Text>
       </View>
       <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'max-height15', 'flex-row'])}>
@@ -53,7 +53,7 @@ function FlexShrink(): JSX.Element {
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg1'])}>
         <Text className={clnx(['font-size_75', 'black2'])}>
-          如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小
+          如果所 flex 元素的flex-shrink属性都为1，当空间不足时，都将等比例缩小
         </Text>
       </View>
       <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'max-height15', 'flex-row'])}>
@@ -65,7 +65,7 @@ function FlexShrink(): JSX.Element {
     <View className={clnx(['margin_box'])}>
       <View className={clnx(['padding1', 'yellow-bg1'])}>
         <Text className={clnx(['font-size_75', 'black2'])}>
-          如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小
+          如果一个 flex 元素的flex-shrink属性为0，其他 flex 元素都为1，则空间不足时，前者不缩小
         </Text>
       </View>
       <View className={clnx(['flex', 'brand_blue-bg_5', 'padding_10', 'max-height15', 'flex-row'])}>
