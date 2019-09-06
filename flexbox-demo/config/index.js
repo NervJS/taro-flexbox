@@ -74,9 +74,8 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: process.env.OUTPUT_BUILD === process.env.TARO_ENV ? '/taro-flexbox/' : '/',
     staticDirectory: 'static',
-    publicPath: process.env.OUTPUT_BUILD === process.env.TARO_ENV ? '/taro-flexbox/' : undefined,
     module: {
       postcss: {
         autoprefixer: {
@@ -99,7 +98,8 @@ const config = {
       }
     },
     router: {
-      mode: 'browser' // 'hash' 'browser'
+      mode: 'browser', // 'hash' 'browser'
+      basename: process.env.OUTPUT_BUILD === process.env.TARO_ENV ? '/taro-flexbox' : '',
     }
   }
 }
