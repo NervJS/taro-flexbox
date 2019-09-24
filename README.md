@@ -2,11 +2,11 @@
 
 > [Taro 跨端样式方案](https://github.com/NervJS/taro-flexbox/wiki)
 
-[web]: asset/Web.png
+[web]: asset/Web.jpeg
 [weapp]: asset/WeChat.png
 [swan]: asset/Baidu.png
 [alipay]: asset/Alipay.png
-[tt]: asset/ByteDance.png
+[tt]: asset/ByteDance.jpeg
 [qq]: asset/QQ.png
 [ios]: asset/iOS.png
 [android]: asset/Android.png
@@ -66,10 +66,10 @@ yarn build
 
 ## 预览效果
 
-| Web | weapp | swan | alipay |
+| weapp | swan | alipay | qq |
 |:--:|:--:|:--:|:--:|
-|![web]|![weapp]|![swan]|![alipay]|
+|![weapp]|![swan]|![alipay]|![qq]
 
-| tt | qq | iOS | Android |
+| Web | tt | iOS | Android |
 |:--:|:--:|:--:|:--:|
-|![tt]|![qq]|![ios]|![android]|
+|![web]|![tt]|![ios]|![android]|
