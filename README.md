@@ -2,14 +2,14 @@
 
 > [Taro 跨端样式方案](https://github.com/NervJS/taro-flexbox/wiki)
 
-[web]: asset/Web.jpeg
-[weapp]: asset/WeChat.png
-[swan]: asset/Baidu.png
-[alipay]: asset/Alipay.png
-[tt]: asset/ByteDance.jpeg
-[qq]: asset/QQ.png
-[ios]: asset/iOS.png
-[android]: asset/Android.png
+[web]: asset/ScreenShot_Web.jpeg
+[weapp]: asset/ScreenShot_WeChat.png
+[swan]: asset/ScreenShot_Baidu.png
+[alipay]: asset/ScreenShot_Alipay.png
+[tt]: asset/ScreenShot_ByteDance.jpeg
+[qq]: asset/ScreenShot_QQ.png
+[ios]: asset/ScreenShot_iOS.png
+[android]: asset/ScreenShot_Android.png
 
 ## 关于 Flex 布局
 
