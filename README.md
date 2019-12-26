@@ -1,5 +1,13 @@
 # TARO FlexBox 测试项目
 
+| weapp | swan | alipay | qq |
+|:--:|:--:|:--:|:--:|
+|![weapp]|![swan]|![alipay]|![qq]
+
+| Web | tt | iOS | Android |
+|:--:|:--:|:--:|:--:|
+|![web]|![tt]|![ios]|![android]|
+
 > [Taro 跨端样式方案](https://github.com/NervJS/taro-flexbox/wiki)
 
 [web]: asset/ScreenShot_Web@750.jpeg
@@ -64,12 +72,3 @@ yarn build
 - [x] QQ轻应用 qq
 - [ ] 快应用 quickapp
 
-## 预览效果
-
-| weapp | swan | alipay | qq |
-|:--:|:--:|:--:|:--:|
-|![weapp]|![swan]|![alipay]|![qq]
-
-| Web | tt | iOS | Android |
-|:--:|:--:|:--:|:--:|
-|![web]|![tt]|![ios]|![android]|
