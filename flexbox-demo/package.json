@@ -51,7 +51,7 @@
     "nerv-devtools": "^1.4.4",
     "nervjs": "^1.4.4",
     "react": "16.8.6",
-    "react-native": "0.59.10",
+    "react-native": "0.62.3",
     "redux": "^4.0.0",
     "tslib": "^1.8.0"
   },
